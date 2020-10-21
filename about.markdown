@@ -5,7 +5,9 @@ permalink: /about/
 avatarImage: faye-hays.jpg
 ---
 
-<h1>Faye Hays</h1>
+<div>
+  <h1>Faye Hays</h1>
+</div>
 <div>
 👋 I work on products that give people agency and hopefully a bit of joy.
 </div>

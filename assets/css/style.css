@@ -1,7 +1,6 @@
 body {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-
 .content {
   margin-left: auto;
   margin-right: auto;
@@ -32,6 +31,10 @@ body {
   bottom: 0;
 }
 
+.email {
+  float: right;
+}
+
 .aboutHead {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -40,16 +43,16 @@ body {
 .aboutContent {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  /* align-items: ; */
+  text-align: left;
 }
 
-@media screen and (min-width: 48em) {
+/* @media screen and (min-width: 48em) {
   .aboutContent {
     flex-direction: row;
     text-align: left;
   }
-}
+} */
 
 .avatar {
   margin-right: 1rem;
@@ -112,4 +115,17 @@ body {
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+footer .content>div {
+  margin-bottom: 1rem;
+}
+
+.bandito {
+  width: 33%;
+}
+
+.bandito img {
+  max-height: 100%;
+  max-width: 100%;
 }
