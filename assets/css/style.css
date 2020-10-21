@@ -1,0 +1,115 @@
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 768px;
+}
+
+@media screen and (min-width: 48em) {
+  .content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+.shard {
+  height: 50px;
+  position: relative;
+}
+
+.shard svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.aboutHead {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+  .aboutContent {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.avatar {
+  margin-right: 1rem;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 6rem;
+}
+
+.projectContent {
+  padding: 1.5rem 0;
+}
+
+.entrySection>div {
+  margin-bottom: 3rem;
+}
+
+.entryHead>div {
+  margin-bottom: 1rem;
+}
+
+.entrySection .jobTitle {
+  color: rgba(0,0,0,0.4);
+}
+
+.imageBox {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 48em) {
+  .imageBox {
+    flex-direction: row;
+  }
+}
+
+.imageBox img {
+  max-width: 100%;
+  flex-basis: 0;
+  flex: 1;
+}
+
+.imgWrapper {
+  margin-right: 10px;
+}
+
+.imgWrapper:last-child {
+  margin-right: 0;
+}
+
+.entryFigures>div {
+  margin-bottom: 1rem;
+}
+
+.entryFigures>div:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}

@@ -1,0 +1,102 @@
+---
+# The primary home screen that aggregates each section onto a single long page
+layout: base
+---
+
+<div>
+  <section>
+    <div class="content aboutHead">
+      <div class="aboutContent">
+        {% assign about = site.pages | where: "title", "About" %}
+        <div>
+          <div class="avatar">
+            <img src="/assets/images/faye-hays.jpg" />
+          </div>
+        </div>
+        <div>
+          {{ about }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="shard">
+    {% for section in site.sections %}
+      {% assign shardType = forloop.index | modulo: 2 %}
+        <svg
+          version="1.1"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            fill="#{{ section.backgroundColor }}"
+            {% if shardType == 0 %}
+              points="0, 0 0, 100 100, 100"
+            {% else %}
+              points="0, 100 100, 100 100, 0"
+            {% endif %}
+          />
+        </svg>
+      </div>
+      <div
+        class="projectContent"
+        style="background: #{{ section.backgroundColor }}"
+      >
+        <section class="content entrySection">
+          <div class="entryHead">
+            <h2>{{ section.title }}</h2>
+            <div class="description">
+              {{ section.subtitle }}
+            </div>
+            <div class="jobTitle">
+              {{ section.jobTitle}}
+              {% if section.yearStart %}
+                . {{ section.yearStart }}{% if section.yearEnd %}-{{ section.yearEnd }}{% endif %}
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="entryFigures">
+            {% for figure in section.figures  %}
+              <div class="figure">
+                <div class="imageBox">
+                  {% for image in figure.images %}
+                  <div class="imgWrapper">
+                    <img src="/assets/images/{{image}}" alt=""/>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          
+          <div class="entryContent">
+            {{ section.content }}
+          </div>
+        </section>
+      </div>
+      <div class="shard">
+        <svg
+          version="1.1"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            fill="#{{ section.backgroundColor }}"
+            {% if shardType == 0 %}
+              points="0, 0 0, 100 100, 0"
+            {% else %}
+              points="0, 0 100, 0 100, 100"
+            {% endif %}
+          />
+        </svg>
+    {% endfor %} 
+  </div>
+  <footer>
+    <div class="content">
+      © 2020 Faye Hays
+    </div>
+  </footer>
+</div>

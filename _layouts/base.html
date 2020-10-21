@@ -1,0 +1,35 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% if page.index == false %}
+        <meta name="robots" content="noindex">
+        {% endif %}
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% include meta-tags.html %}
+        <link rel="canonical" href="{{ site.url }}" />
+        <script type="application/ld+json">
+            {
+                "name": "{{ site.title }}",
+                "description":"{{ page_desc }}",
+                "@type": "WebSite",
+                "url": "{{ site.url }}",
+                "headline": "{{ site.title }}",
+                "@context":"http://schema.org"
+            }
+        </script>
+        <link rel="stylesheet" href="/assets/css/pure.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png">
+        {% include google-analytics.html %}
+    </head>
+    <body>
+        <div class="container layout-{{ page.layout }}">{{ content }}</div>
+    </body>
+</html>
