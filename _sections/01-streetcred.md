@@ -14,4 +14,3 @@ figures:
     - streetcred/streetcred_3_improve_bonus.png
     caption: ~
 ---
-This post is all about Village

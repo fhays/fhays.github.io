@@ -22,4 +22,3 @@ figures:
     - quidd/quidd_8.png
     caption: ~
 ---
-This post is all about Quidd

@@ -17,4 +17,3 @@ figures:
     - village/village_3.png
     caption: ~
 ---
-This post is all about Quidd
