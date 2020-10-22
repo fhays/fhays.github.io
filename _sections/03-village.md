@@ -5,8 +5,8 @@ backgroundColor: d0eee3
 
 subtitle: Parenting advice & product research
 jobTitle: Design Director
-yearStart: 2016
-yearEnd: 2017
+yearStart: 2014
+yearEnd: 2016
 
 figures:
   - images:

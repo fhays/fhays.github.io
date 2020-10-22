@@ -4,8 +4,8 @@ date:   2020-10-18 20:40:05 -0500
 backgroundColor: e4f4d0
 
 subtitle: Digital collectables
-jobTitle: Head of Design
-yearStart: 2015
+jobTitle: Creative Lead & Product Design
+yearStart: 2016
 yearEnd: 2017
 
 figures:
