@@ -11,8 +11,6 @@ yearEnd: 2017
 figures:
   - images:
     - quidd/quidd_1.png
-    - quidd/quidd_2.png
-    - quidd/quidd_3.png
     caption: ~
   - images:
     - quidd/quidd_4.png
