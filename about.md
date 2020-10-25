@@ -9,4 +9,4 @@ avatarImage: faye-hays.jpg
 
 **👋 I work on products that give people agency and hopefully a bit of joy.**
 
-**📩 <a href="mailto:fayaki@gmail.com">fayaki@gmail.com</a>**
+📩 <a href="mailto:fayaki@gmail.com">fayaki@gmail.com</a>
