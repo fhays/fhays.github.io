@@ -25,20 +25,16 @@ a {
 .shard {
   height: 50px;
   position: relative;
-}
 
-.shard svg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.email {
-  float: right;
+  svg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .aboutHead {
@@ -62,27 +58,29 @@ a {
 
 .avatar {
   margin-right: 1rem;
-}
 
-.avatar img {
-  border-radius: 50%;
-  width: 6rem;
+  img {
+    border-radius: 50%;
+    width: 6rem;
+  }
 }
 
 .projectContent {
   padding: 1.5rem 0;
 }
 
-.entrySection>div {
-  margin-bottom: 3rem;
+.entrySection {
+  &>div {
+    margin-bottom: 3rem;
+  }
+
+  .jobTitle {
+    color: rgba(0,0,0,0.4);
+  }
 }
 
 .entryHead>div {
   margin-bottom: 1rem;
-}
-
-.entrySection .jobTitle {
-  color: rgba(0,0,0,0.4);
 }
 
 .imageBox {
@@ -104,34 +102,35 @@ a {
 
 .imgWrapper {
   margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.imgWrapper:last-child {
-  margin-right: 0;
-}
-
-.entryFigures>div {
-  margin-bottom: 1rem;
-}
-
-.entryFigures>div:last-child {
-  margin-bottom: 0;
+.entryFigures {
+  &>div {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  .content>div {
+    margin-bottom: 1rem;
+  }
 }
 
-footer .content>div {
-  margin-bottom: 1rem;
-}
 
 .bandito {
   width: 33%;
-}
-
-.bandito img {
-  max-height: 100%;
-  max-width: 100%;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
