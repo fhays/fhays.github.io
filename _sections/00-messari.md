@@ -13,6 +13,6 @@ figures:
     - messari/messari_1.png
     caption: ~
   - images:
-    - messari/messari_2.png
+    - messari/messari_2.jpeg
     caption: ~
 ---
