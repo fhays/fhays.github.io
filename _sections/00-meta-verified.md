@@ -23,9 +23,6 @@ figures:
   - images:
       - meta_verified/MVimg4.jpeg
     caption: ~
-  - images:
-      - meta_verified/MVimg5.jpeg
-    caption: ~
 ---
 
 ***Note:** As I’m unable to share designs produced for Meta due to company policy, I have included only a sample of public-facing images published by Meta or others of the products, tools and designs I worked on.*
