@@ -1,19 +1,31 @@
 ---
 order: 1
-title:  "Meta Verified"
+title:  "Meta"
 date:   2024-09-21 20:40:05 -0500
-backgroundColor: FFDC80
+backgroundColor: DDB4B3
 
-subtitle: Meta verified subtitle
-jobTitle: Product Designer
-yearStart: 2023
-yearEnd: 2025
+subtitle: Meta Verified for Businesses, Meta Verified for WhatsApp, and Shops on Instagram & Facebook
+jobTitle: |
+  Senior Staff Product Designer 2024-Current<br/>
+  Staff Product Designer 2022-2024<br/>
+  Senior Product Designer 2021-2022<br/>
 
 figures:
   - images:
-    - messari/messari_1.png
+    - meta_verified/MVimg1.jpeg
     caption: ~
   - images:
-    - messari/messari_2.jpeg
+      - meta_verified/MVimg2.jpeg
+    caption: ~
+  - images:
+      - meta_verified/MVimg3.jpeg
+    caption: ~
+  - images:
+      - meta_verified/MVimg4.jpeg
+    caption: ~
+  - images:
+      - meta_verified/MVimg5.jpeg
     caption: ~
 ---
+
+***Note:** As I’m unable to share designs produced for Meta due to company policy, I have included only a sample of public-facing images published by Meta or others of the products, tools and designs I worked on.*
