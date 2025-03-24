@@ -2,7 +2,7 @@
 order: 1
 title:  "Meta"
 date:   2024-09-21 20:40:05 -0500
-backgroundColor: DDB4B3
+backgroundColor: d0e3f0
 
 subtitle: Meta Verified for Businesses, Meta Verified for WhatsApp, and Shops on Instagram & Facebook
 jobTitle: |
