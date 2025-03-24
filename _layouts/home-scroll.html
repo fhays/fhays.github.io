@@ -21,85 +21,86 @@ layout: base
   </section>
 
   <div class="shard">
-    {% for section in site.sections %}
-      {% assign shardType = forloop.index | modulo: 2 %}
-        <svg
-          version="1.1"
-          preserveAspectRatio="none"
-          viewBox="0 0 100 100"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <polygon
-            fill="#{{ section.backgroundColor }}"
-            {% if shardType == 0 %}
+    {% assign ordered_sections = site.sections | sort: "order" %}
+    {% for section in ordered_sections %}
+    {% assign shardType = forloop.index | modulo: 2 %}
+    <svg
+            version="1.1"
+            preserveAspectRatio="none"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon
+              fill="#{{ section.backgroundColor }}"
+              {% if shardType == 0 %}
               points="0, 0 0, 100 100, 100"
-            {% else %}
+              {% else %}
               points="0, 100 100, 100 100, 0"
-            {% endif %}
-          />
-        </svg>
+              {% endif %}
+      />
+    </svg>
+  </div>
+  <div
+          class="projectContent"
+          style="background: #{{ section.backgroundColor }}"
+  >
+    <section class="content entrySection">
+      <div class="entryHead">
+        <h2>{{ section.title }}</h2>
+        <div class="description">
+          {{ section.subtitle }}
+        </div>
+        <div class="jobTitle">
+          {{ section.jobTitle}}
+          {% if section.yearStart %}
+          . {{ section.yearStart }}{% if section.yearEnd %}-{{ section.yearEnd }}{% endif %}
+          {% endif %}
+        </div>
       </div>
-      <div
-        class="projectContent"
-        style="background: #{{ section.backgroundColor }}"
-      >
-        <section class="content entrySection">
-          <div class="entryHead">
-            <h2>{{ section.title }}</h2>
-            <div class="description">
-              {{ section.subtitle }}
-            </div>
-            <div class="jobTitle">
-              {{ section.jobTitle}}
-              {% if section.yearStart %}
-                . {{ section.yearStart }}{% if section.yearEnd %}-{{ section.yearEnd }}{% endif %}
+
+      <div class="entryFigures">
+        {% for figure in section.figures  %}
+        <div class="figure">
+          <div class="imageBox">
+            {% for media in figure.images %}
+            <div class="imgWrapper">
+              {% if media contains '.mp4' %}
+              <video width="320" height="240" controls>
+                <source src="/assets/images/{{media}}" type="video/mp4" autoplay preload loop>
+                We could not load this video in your browser.
+              </video>
+              {% else %}
+              <img src="/assets/images/{{media}}" alt=""/>
               {% endif %}
             </div>
-          </div>
-
-          <div class="entryFigures">
-            {% for figure in section.figures  %}
-              <div class="figure">
-                <div class="imageBox">
-                  {% for media in figure.images %}
-                  <div class="imgWrapper">
-                    {% if media contains '.mp4' %}
-                      <video width="320" height="240" controls>
-                        <source src="/assets/images/{{media}}" type="video/mp4" autoplay preload loop>
-                        We could not load this video in your browser.
-                      </video>
-                    {% else %}
-                      <img src="/assets/images/{{media}}" alt=""/>
-                    {% endif %}
-                  </div>
-                  {% endfor %}
-                </div>
-              </div>
             {% endfor %}
           </div>
-          
-          <div class="entryContent">
-            {{ section.content }}
-          </div>
-        </section>
+        </div>
+        {% endfor %}
       </div>
-      <div class="shard">
-        <svg
-          version="1.1"
-          preserveAspectRatio="none"
-          viewBox="0 0 100 100"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <polygon
-            fill="#{{ section.backgroundColor }}"
-            {% if shardType == 0 %}
+
+      <div class="entryContent">
+        {{ section.content }}
+      </div>
+    </section>
+  </div>
+  <div class="shard">
+    <svg
+            version="1.1"
+            preserveAspectRatio="none"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon
+              fill="#{{ section.backgroundColor }}"
+              {% if shardType == 0 %}
               points="0, 0 0, 100 100, 0"
-            {% else %}
+              {% else %}
               points="0, 0 100, 0 100, 100"
-            {% endif %}
-          />
-        </svg>
-    {% endfor %} 
+              {% endif %}
+      />
+    </svg>
+    {% endfor %}
   </div>
   <footer>
     <div class="content">
