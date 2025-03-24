@@ -1,7 +1,8 @@
 ---
+order: 3
 title:  "Messari"
 date:   2020-09-21 20:40:05 -0500
-backgroundColor: d0e3f0
+backgroundColor: FFFFFF
 
 subtitle: Blockchain research, news & investing tools for crypto professionals
 jobTitle: Head of Design & Senior Product Manager

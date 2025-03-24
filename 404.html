@@ -1,25 +1,77 @@
 ---
 permalink: /404.html
-layout: default
+layout: base
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
+<div class="error-container">
+  <div class="error-content">
+    <h1>404</h1>
+    <div class="error-message">
+      <p>Oops! This page seems to have wandered off.</p>
+      <p>Let's get you back on track.</p>
+    </div>
+    <div class="error-actions">
+      <a href="/" class="home-button">Return Home</a>
+    </div>
+    <div class="error-image">
+      <img src="/assets/images/bandito_circle.png" alt="Bandito looking confused" />
+    </div>
+  </div>
+</div>
+
+<style>
+  .error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
     text-align: center;
+    padding: 2rem;
   }
+
+  .error-content {
+    max-width: 600px;
+  }
+
   h1 {
-    margin: 30px 0;
-    font-size: 4em;
+    font-size: 8rem;
+    margin: 0;
     line-height: 1;
-    letter-spacing: -1px;
+    color: #333;
+  }
+
+  .error-message {
+    margin: 2rem 0;
+  }
+
+  .error-message p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+  }
+
+  .home-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .home-button:hover {
+    background-color: #555;
+  }
+
+  .error-image {
+    margin-top: 2rem;
+  }
+
+  .error-image img {
+    max-width: 200px;
+    border-radius: 50%;
   }
 </style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
