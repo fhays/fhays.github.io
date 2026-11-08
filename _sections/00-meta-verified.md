@@ -4,7 +4,7 @@ title:  "Meta"
 date:   2024-09-21 20:40:05 -0500
 backgroundColor: d0e3f0
 
-subtitle: Meta Verified for Businesses, Meta Verified for WhatsApp, and Shops on Instagram & Facebook
+subtitle: Lead IC Designer of Meta One for Creators and Businesses
 jobTitle: |
   Senior Staff Product Designer 2024-Current<br/>
   Staff Product Designer 2022-2024<br/>
@@ -25,4 +25,4 @@ figures:
     caption: ~
 ---
 
-***Note:** As I’m unable to share designs produced for Meta due to company policy, I have included only a sample of public-facing images published by Meta or others of the products, tools and designs I worked on.*
+***Note:** I’m unable to share designs produced for Meta due to company policy. This selection includes only a sample of public-facing images of the products contributed to.*
