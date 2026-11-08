@@ -7,6 +7,6 @@ avatarImage: faye-hays.jpg
 
 # Faye Hays
 
-0-to-1 product designer with experience across early stage startups, local businesses, monetization and subscription products at Meta.
+0-to-1 product designer with experience across early stage startups, local businesses, monetization and subscription products at Meta. Artwork, weaving and personal projects at fhays.com.
 
 📩 <a href="mailto:fayaki@gmail.com">fayaki@gmail.com</a>
